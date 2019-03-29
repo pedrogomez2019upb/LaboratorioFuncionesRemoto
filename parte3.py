@@ -17,14 +17,20 @@ def is_prime(number):
         #Se imprime -1 para que indique que hubo algún error
         print("-1")
 
+#Se crea un counter para saber cuantas veces ha hecho el proceso
+counter=0
 #Se crea un while para que vaya haciendo el procedo varias veces 
 while True:
     a=int(input("Welcome! We are going to check if your number is prime. To continue press any number , if not press  a number equal or less to 0: "))
     if a>0:
         print("Goodbye!")
+        #Se imprime el valor final del counter
+        print("The number of times you've got a prime number is : {}".format(counter))
         break
     else:
         if a <= 0:
+            #Cada vez que consiga un primo se suma el contador
+            counter=counter + 1
             number=int(input("Enter number: "))
             print(is_prime(number))
 #Desarrollado por Pedro Gómez / ID:000396221
