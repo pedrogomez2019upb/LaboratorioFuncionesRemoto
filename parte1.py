@@ -7,7 +7,7 @@ def a_power_b(base,exp):
         #con la función y con esto hacer una recursion de la base con el exponente menos 1
     if(exp!=1):
         return(base*a_power_b(base,exp-1))
-        
+
 print("Result:",a_power_b(2,6))
 
-#Desarrollado por Pedro Gómez / ID:000396221
+#Desarrollado por Pedro Gómez / ID:000396221 XD
