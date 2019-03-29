@@ -8,6 +8,14 @@ def a_power_b(base,exp):
     if(exp!=1):
         return(base*a_power_b(base,exp-1))
 
-print("Result:",a_power_b(2,6))
 
-#Desarrollado por Pedro Gómez / ID:000396221 XD
+while True:
+    a=int(input("Welcome! We are going to elevate a number. To continue press any number , if not press 0: "))
+    if a==0:
+        print("Goodbye!")
+        break
+    else:
+        base=int(input("Enter base: "))
+        exp=int(input("Enter the exponential value: "))
+        print("Result:",a_power_b(base,exp))
+#Desarrollado por Pedro Gómez / ID:000396221
